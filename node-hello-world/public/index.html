@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>Customer Care デモ</title>
+<title>Answer findingデモ</title>
 <style>
 .tabs {
   display: flex;
@@ -66,7 +66,7 @@ body {
   position:absolute;
   top:20;
   left:0px;
-  width:50%;
+  width:100%;
   height:100%;
   text-align:center;
   }
@@ -87,17 +87,20 @@ iframe {
 </head>
 <body>
   <div class="tabs">
-  <input type="radio" name="tabs" id="tabone" checked="checked">
-  <label for="tabone">答えの検索</label>
-    <div class="tab">
+    <input type="radio" name="tabs" id="tabone" checked="checked">
+    <label for="tabone">普通の検索</label>
+    <div class="tab">  
       <div id="left">
-        <iframe src="http://162.133.84.168:3000"></iframe>
-      </div>
-      <div id="right">
-        <iframe src="https://us-south.discovery.watson.cloud.ibm.com/v2/instances/crn%3Av1%3Abluemix%3Apublic%3Adiscovery%3Aus-south%3Aa%2F9544d65b4e3d060413958b440d54dc81%3A3056741c-d116-454d-bad8-5e50d920cc5e%3A%3A/projects/d2e03857-d82d-41ef-89da-1df0cd56f23f/workspace/preview/"></iframe>
+        <iframe src="http://162.133.84.168:3000/"></iframe>
       </div>
     </div>
-
+    <input type="radio" name="tabs" id="tabtwo">
+    <label for="tabtwo">答えの検索</label>
+    <div class="tab">
+      <div id="left">
+        <iframe src="http://162.133.84.168:3001/"></iframe>
+      </div>
+    </div>
   </div>
 </body>
 </html>
